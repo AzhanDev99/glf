@@ -1,0 +1,745 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: white;
+    font-family: sans-serif ;
+    cursor: none;
+}
+
+.navbar{
+    height: 120px;
+    width: 100%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 65px;
+    gap: 35px;
+    position: fixed;
+    z-index: 99;
+}
+
+.navbar img{
+    height: 70px;
+}
+
+
+.navbar :nth-child(6)
+{
+    margin-right: 63px;
+}
+
+
+.navbar button {
+    margin-left: -30px;
+    font-family: sans-serif;
+    border: 2px solid green;
+    padding: 12px 34px;
+    background-color: black;
+    font-weight: 800;
+    font-size: 13px;
+    border-radius: 23px;
+    white-space: nowrap;
+    gap: 13px;
+}
+
+.cursor{
+    height: 25px;
+    width: 25px;
+    background-color: #95c11e;
+    border-radius: 50px;
+    position: fixed;
+    z-index: 99;
+}
+
+.cursor-number-two-blur{
+    height: 300px;
+    width: 300px;
+    background-color: #96c11e67;
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(40px);
+    z-index: 9;
+
+}
+
+
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+.main{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.37);
+
+}
+
+.page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+}
+
+.page1 h1{
+    font-size: 120px;
+    font-weight: 900;
+    position: relative;
+}
+
+.page1 h1::before{
+    content: "EAT. DRINK. PLAY.";
+    position: absolute;
+    color: black;
+    z-index: -1;
+    top: -4px;
+    left: -4px;
+    -webkit-text-stroke: 1.5px #95c11e;
+}
+
+
+.page1 h4{
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.page1 p{
+    font-size: 20px;
+    font-weight: 500;
+    width: 50%;
+}
+
+
+.page2{
+    height: 85vh;
+    width: 100%;
+    z-index: 10;
+}
+
+.marquee-scoller-text {
+    display: flex;
+    font-size: 100px;
+    font-weight: 900;
+    letter-spacing: 0.2rem;
+    z-index: 10;
+    position: relative;
+}
+.marquee-scoller-text>span{
+
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+.marquee-scoller-text>span:hover{
+    color: #95c11e;
+}
+
+.Page-2-Content{
+    /* background-color: blue; */
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    position: relative;
+    /* z-index: 10; */
+}
+
+.Page-2-Content>img{
+    margin-top: 15px;
+    border-radius: 20px;
+}
+
+.Page-2-Content-img1{
+    width: 150px;
+    height: 150px;
+}
+.Page-2-Content-img2{
+    width: 180px;
+    height: 200px;
+}
+
+.Page-2-Content-text{
+    width: 43%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.Page-2-Content-text>h1{
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+}
+
+.Page-2-Content-text>p{
+    font-size: 18px;
+    padding-top: 25px;
+    line-height: 30px;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+}
+
+
+/* sherias approach */
+
+
+.page3{
+    height: 70vh;
+    width: 100%;
+    background-color:black;
+    position: relative;
+
+} 
+
+#card-container{
+    margin-top: 5%;
+
+    /* background-color: brown; */
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+    z-index: 10;
+}
+
+.card{
+    height: 100%;
+    width: 28%;
+    /* background-color: blue; */
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.466);
+    background-blend-mode: darken;
+}
+
+.card h1{
+    position: absolute;
+    bottom: 5%;
+    margin-left: 25px;
+}
+
+#card1{
+    background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-toptracer-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1");
+}
+
+#card2{
+    background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4-1024x1024.jpg?strip=all&lossy=1&sharp=1&ssl=1");
+}
+
+#card3{
+    background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-lessons-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1");
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #95c11e;
+    padding-top: 160px;
+    padding: 20px;
+    opacity: 0;
+    transition: 0.5s ease;
+    position: relative;
+}
+
+
+.overlay i{
+    font-size: 85px;
+    right: -17px;
+    top: -17px;
+    color: black;
+    position: absolute;
+}
+.overlay h4{
+    color: black;
+    font-weight: 800;
+    font-size: 28px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    margin-top: 32%;
+
+}
+
+.overlay p{
+    color: black;
+    font-size: 20px;
+}
+
+
+ .card:hover .overlay{
+    opacity: 1;
+}
+
+.card:hover h1{
+    display: none;
+}
+
+.image1-page3{
+    width: 150px;
+    position: absolute;
+    top: -10%;
+    left: 2%;
+}
+
+.image2-page3{
+    width: 150px;
+    position: absolute;
+    bottom: 4%;
+    right: 2%;
+}
+
+
+                    /* page4 */
+
+.page4{
+    height: 40vh;
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page4-content{
+    width: 100%;
+    height: 90%;
+    background-color: #95c11e;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient( to top right,#B3E824, #95c11e ,#039c3d );
+}
+
+.page4-content p{
+    font-size: 25px;
+    font-weight: 800;
+    color: black;
+}
+
+.page4-left-image{
+    position: absolute;
+    width: 8%;
+    left: 0%;
+}
+
+.page4-right-image{
+    position: absolute;
+    width: 8%;
+    right: 0%;
+}
+
+
+
+                    /* page5 */
+
+
+
+.page5{
+    height: 90vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    /* justify-content: space-between; */
+    position: relative;
+}
+
+
+.page5-left{
+    height: 100%;
+    width: 50%;
+    /* background-color: pink; */
+    padding-left: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.page5-left img{
+    height: 400px;
+    width: 600px;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+
+.page5-right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 70px;
+}
+    
+    
+.page5-right h1{
+    margin-top: 18%;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 7%;
+    margin-right: 60px;
+}
+
+
+.page5-right p:nth-child(2){
+    line-height: 25px;
+    font-size: 20px;
+    margin-bottom: 4%;
+}
+
+.page5-right p:nth-child(3){
+    line-height: 25px;
+    font-size: 19px;
+    margin-bottom: 8%;
+}
+
+
+.page5-right button{
+    background-color: black;
+    padding: 15px 20px;
+    border-radius: 35px;
+    border: 3px solid #95C11E;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    margin-right: 270px;
+}
+
+.image1-page5 img{
+    position: absolute;
+    width: 200px;
+    left: 3%;
+    bottom: 5%;
+}
+
+
+
+                /* page6 */
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+                    
+    }
+.page6{
+    height: 90vh;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+
+.page6-content{
+    rotate: -3deg;
+    height: 85%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+.page6-content img{
+    /* position: fixed; */
+    height: 90%;
+    width: 25vw;
+    /* border: 2px solid blue; */
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    animation: 10s slide infinite linear;
+}
+
+.page6 p{
+    rotate: -3deg;
+    /* background-color: #039c3d; */
+    font-size: 23px;
+    font-weight: 700;
+    margin-left: 35%;
+}
+
+
+
+
+
+
+                        /* page7 */
+
+
+
+
+
+
+.page7{
+    height: 90vh;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+
+.colon-left img{
+    height: 50px;
+    position: absolute;
+    top: 20%;
+    left: 8%;
+
+}
+
+.page7-content p{
+    text-align: center;
+    font-size: 35px;
+    font-family: sans-serif;
+}
+
+
+.colon-right img{
+    height: 50px;
+    position: absolute;
+    bottom: 20%;
+    right: 8%;
+}
+
+
+
+
+          /* page8 */
+
+
+
+
+.page8{
+    height: 50vh;
+    width: 100%;
+    /* background-color: blue; */
+    text-transform: uppercase;
+
+
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.page8 p{
+    position: absolute;
+    font-size: 70px;
+    top: 23%;
+    white-space: nowrap;
+    text-shadow: 0 0 10px #95C11E, 0 0 15px #95C11E;
+}
+
+.contentbox{
+    height: 30%;
+    width: 30%;
+    background-color: #95c11e;
+    z-index: 10;
+    
+
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+
+.page8para {
+    font-weight: 900;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: black;
+    z-index: 1;
+}
+
+
+
+.page8image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+.contentbox:hover .page8para {
+    opacity: 0;
+}
+
+.contentbox:hover .page8image {
+    opacity: 1;
+}
+
+
+
+
+.page9{
+    height: 380px;
+    background-image: linear-gradient(to top right, #B3E824, #95c11e, #039c3d);
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 80px;
+    padding-top: 50px;
+    position: relative;
+    color: #000;
+}
+
+
+
+
+.page9 img{
+    position: absolute ;
+    height: 300px;
+    top: 10%;
+    left: 0;
+
+    /* remove kedena kynky color transparent ha  */
+    z-index: 1;
+}
+#footer-con{
+    height: 80%;
+    width: 20%;
+    /* background-color: pink; */
+    z-index: 2;
+    /* position: relative; */
+    
+}
+
+
+
+
+.footer-content-1{
+    position: relative;
+}
+.footer-content-1 img{
+    /* background-color: red; */
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    left: 40px;
+    top: 0;
+}
+.footer-content-1-favicon{
+    /* background-color: red; */
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    bottom: 60px;
+    left: 50px  ;
+} 
+.footer-content-1 i{
+    font-size: 30px;
+    color: #000;
+}
+
+
+
+
+
+
+.footer-content-2 , .footer-content-3{
+    line-height: 50px;
+
+    
+
+}
+.footer-content-2 h3 , .footer-content-3 h3{
+    /* background-color: red; */
+    font-weight: 900;
+    font-size: 23px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: #000;
+}
+
+
+
+
+
+
+.footer-content-4{
+    line-height: 30px;
+}
+.footer-content-4 h5{
+    /* background-color: red; */
+    font-size: 20px;
+    color: #000;
+}
+.footer-content-4 h3{
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #000;
+}
+
+
+
+
+.copyright-paragraph{
+    position: absolute;
+    width: 106%;
+    height: 40px;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 2;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.copyright-paragraph p{
+    color: #000;
+    font-weight: 600;
+}
+.copyright-paragraph :nth-child(2){
+    font-size: 25px;
+    font-weight: 900;
+    color: #000;    
+}
